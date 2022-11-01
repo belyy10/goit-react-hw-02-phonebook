@@ -2,7 +2,7 @@ import { Component } from 'react';
 import ContactForm from './ContactForm/ContactForm';
 import { ContactsList } from './ContactsList/ContactsList';
 import { nanoid } from 'nanoid';
-import { Filter } from './ContactForm/Filter/Filter';
+import { Filter } from './Filter/Filter';
 import { Container } from './App.styled';
 
 class App extends Component {
@@ -14,8 +14,6 @@ class App extends Component {
       { id: 'id-4', name: 'Annie Copeland', number: '227-91-26' },
     ],
     filter: '',
-    name: '',
-    number: '',
   };
 
   addContacts = ({ name, number }) => {
